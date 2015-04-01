@@ -1,0 +1,14 @@
+extends layout
+
+block styles
+  link(rel='stylesheet', href='/stylesheets/senti-twitter.css')
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Quicksand:300,400', type='text/css')
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,300', type='text/css')
+  
+block content
+  span.tweet-box#love-box Love
+    div.tweet-count#love-count 0
+    ul.timeline
+  span.tweet-box#hate-box Hate
+    div.tweet-count#hate-count 0
+    ul.timeline
